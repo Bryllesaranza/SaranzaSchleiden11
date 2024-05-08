@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Text</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .letter-box {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 36px;
+    border-radius: 5px;
+    animation: colorChange 2s infinite alternate;
+  }
+
+  @keyframes colorChange {
+    0% { background-color: #ff6347; }
+    25% { background-color: #7fffd4; }
+    50% { background-color: #ffd700; }
+    75% { background-color: #9370db; }
+    100% { background-color: #00ffff; }
+  }
+</style>
+</head>
+<body>
+  <div class="letter-box">B</div>
+  <div class="letter-box">R</div>
+  <div class="letter-box">Y</div>
+  <div class="letter-box">L</div>
+  <div class="letter-box">L</div>
+  <div class="letter-box">E</div>
+
+  <script>
+    // Optional: JavaScript can be used to animate the letters further
+  </script>
+</body>
+</html>
